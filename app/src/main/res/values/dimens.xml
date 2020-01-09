@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textSizeTiny">12sp</dimen>
+    <dimen name="textSizeSmall">14sp</dimen>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="textSizeMedium">18sp</dimen>
+    <dimen name="textSizeLarge">20sp</dimen>
+    <dimen name="textSizeTitle">22sp</dimen>
+    <dimen name="dividerHeight">1px</dimen>
+
+    <dimen name="parent_padding">12dp</dimen>
+    <dimen name="parent_padding_half">6dp</dimen>
+    <dimen name="parent_padding_quarter">4dp</dimen>
+
+    <dimen name="elevation">@dimen/design_bottom_navigation_elevation</dimen>
+
+    <dimen name="toolbarHeight">56dp</dimen>
+    <dimen name="image_avatar">64dp</dimen>
+    <dimen name="icon_size">@dimen/design_bottom_navigation_icon_size</dimen>
+
+</resources>

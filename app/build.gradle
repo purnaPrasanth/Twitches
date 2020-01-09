@@ -1,0 +1,49 @@
+import com.purnaprasanth.buildsrc.Libs
+import com.purnaprasanth.buildsrc.TestLibs
+import com.purnaprasanth.buildsrc.Versions
+
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: "kotlin-kapt"
+
+android {
+    compileSdkVersion Versions.compileSdk
+    buildToolsVersion Versions.buildTools
+    defaultConfig {
+        applicationId "com.purnaprasanth.twitches"
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation(Libs.Kotlin.stdLib)
+    implementation(Libs.Androidx.appCompat)
+    implementation(Libs.Androidx.constraintLayout)
+
+    implementation(Libs.OkHttp.core)
+
+    implementation(Libs.RxJava.java)
+
+    implementation(Libs.Epoxy.core)
+    kapt(Libs.Epoxy.epoxyAnnotations)
+
+    testImplementation(TestLibs.Junit.jUnit)
+    androidTestImplementation(TestLibs.AndroidX.junitExt)
+    androidTestImplementation(TestLibs.AndroidX.esspressCore)
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Twitches</string>
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="bookmarks">Bookmarks</string>
+</resources>
