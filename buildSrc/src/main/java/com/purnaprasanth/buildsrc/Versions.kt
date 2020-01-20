@@ -14,7 +14,7 @@ object Versions {
 
     // Plugin
     const val pluginGradle = "3.5.2"
-    const val kotlin = "1.3.50"
+    const val kotlin = "1.3.61"
     const val coRoutines = "1.3.3"
 
     // Androidx
@@ -25,6 +25,7 @@ object Versions {
     const val navigation = "2.1.0"
     const val browser = "1.0.0"
     const val room = "2.2.1"
+    const val playServices = "17.0.0"
 
     // Third Party
     const val rxJava = "2.2.2"

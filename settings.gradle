@@ -1,3 +1,3 @@
-rootProject.name='Twitches'
+rootProject.name='MapWitches'
 include ':app'
 include ':base'

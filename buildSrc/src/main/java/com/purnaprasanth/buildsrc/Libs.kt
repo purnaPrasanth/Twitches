@@ -20,6 +20,10 @@ object Libs {
         const val recyclerview = "androidx.recyclerview:recyclerview:${Versions.recycleView}"
     }
 
+    object PlayServices {
+        const val maps = "com.google.android.gms:play-services-maps:${Versions.playServices}"
+    }
+
     object LifeCycle {
         const val extensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
         const val runner = "androidx.lifecycle:lifecycle-runtime:${Versions.lifecycle}"

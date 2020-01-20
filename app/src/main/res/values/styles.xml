@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
         <item name="android:textAppearance">@style/AppTheme.Text</item>
         <item name="android:textAppearanceSmall">@style/AppTheme.Text.Small</item>
         <item name="android:textAppearanceMedium">@style/AppTheme.Text.Medium</item>
@@ -21,6 +22,7 @@
         <item name="twitchesToolbarTitleAppearance">@style/AppTheme.Toolbar.Title</item>
         <item name="twitchesBottomNavAppearance">@style/AppTheme.BottomNavigation</item>
         <item name="textAppearanceCaption">@style/AppTheme.Text.Caption</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="BaseAppTheme.Text.ToolBarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">

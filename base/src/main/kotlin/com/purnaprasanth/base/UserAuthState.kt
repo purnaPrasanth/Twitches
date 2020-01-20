@@ -7,16 +7,16 @@ package com.purnaprasanth.base
 /**
  * Different Login States of a user in the Application
  */
-sealed class UserLoginState {
+sealed class UserAuthState {
     /**
      * When the User is LoggedIn
      */
-    object LoggedIn : UserLoginState()
+    object Autherized : UserAuthState()
 
     /**
      * When the user is LoggedOut
      *
      * By Default, user should be in Guest Mode
      */
-    object Guest : UserLoginState()
+    object Guest : UserAuthState()
 }

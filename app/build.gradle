@@ -20,6 +20,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [mapsKey: TWITCHES_MAPS_KEY]
     }
     buildTypes {
         release {
@@ -35,6 +37,7 @@ dependencies {
     implementation(Libs.Kotlin.stdLib)
     implementation(Libs.Androidx.appCompat)
     implementation(Libs.Androidx.constraintLayout)
+    implementation(Libs.PlayServices.maps)
 
     implementation(Libs.OkHttp.core)
 

@@ -1,38 +1,44 @@
 package com.purnaprasanth.twitches
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import androidx.appcompat.widget.Toolbar
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import io.reactivex.Observable
-import okhttp3.OkHttpClient
-import org.reactivestreams.Subscriber
-import java.net.SocketTimeoutException
-import java.util.concurrent.ExecutionException
-import java.util.concurrent.ExecutorService
-import java.util.concurrent.Executors
-import java.util.stream.Stream
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity(), OnMapReadyCallback {
 
-    lateinit var bottomNavigationView: BottomNavigationView
-    lateinit var textView: TextView
+    private lateinit var bottomNavigationView: BottomNavigationView
+    private lateinit var mapFragment: SupportMapFragment
+    private lateinit var mMap: GoogleMap
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        textView = findViewById(R.id.text_view)
+        mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
-            textView.text = menuItem.title
             when (menuItem.itemId) {
-                R.id.home, R.id.bookmarks, R.id.profile -> true
+                R.id.home, R.id.bookmarks -> true
                 else -> false
 
             }
+        }
+        mapFragment.getMapAsync(this)
+    }
+
+    override fun onMapReady(googleMap: GoogleMap?) {
+        googleMap?.let {
+            mMap = googleMap
+
+            val bangalore = LatLng(12.9716, 77.5946)
+            mMap.addMarker(MarkerOptions().position(bangalore).title("Marker in Sydney"))
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(bangalore))
         }
     }
 }
