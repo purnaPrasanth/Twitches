@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="twitchesToolbarTitleAppearance" format="reference" />
     <attr name="twitchesBottomNavAppearance" format="reference" />
 </resources>

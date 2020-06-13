@@ -13,28 +13,29 @@ object Versions {
     const val targetSdk = 29
 
     // Plugin
-    const val pluginGradle = "3.5.2"
-    const val kotlin = "1.3.61"
-    const val coRoutines = "1.3.3"
+    const val pluginGradle = "7.0.0-alpha12"
+    const val kotlin = "1.4.21"
+    const val coRoutines = "1.3.7"
 
     // Androidx
     const val appCompat = "1.1.0"
     const val constraintLayout = "1.1.3"
+    const val ktx = "1.3.0"
     const val recycleView = "1.0.0"
     const val lifecycle = "2.1.0"
     const val navigation = "2.1.0"
     const val browser = "1.0.0"
     const val room = "2.2.1"
     const val playServices = "17.0.0"
+    const val material = "1.3.0-beta01"
+    const val motionLayout = "2.0.0-beta1"
 
     // Third Party
-    const val rxJava = "2.2.2"
-    const val rxAndroid = "2.1.0"
     const val dagger2 = "2.24"
     const val okHttp = "4.3.0"
     const val retrofit = "2.3.0"
     const val stetho = "1.5.1"
-    const val glide = "4.10.0"
+    const val coil = "1.1.1"
     const val epoxy = "3.9.0"
 
     // testing

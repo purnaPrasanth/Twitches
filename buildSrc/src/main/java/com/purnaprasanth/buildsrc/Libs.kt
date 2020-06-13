@@ -17,7 +17,10 @@ object Libs {
         const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
         const val constraintLayout =
             "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
+        const val ktx = "androidx.core:core-ktx:${Versions.ktx}"
         const val recyclerview = "androidx.recyclerview:recyclerview:${Versions.recycleView}"
+        const val material = "com.google.android.material:material:${Versions.material}"
+        const val motionLayout = "androidx.constraintlayout:constraintlayout:${Versions.motionLayout}"
     }
 
     object PlayServices {
@@ -85,13 +88,7 @@ object Libs {
             "com.google.dagger:dagger-android-processor:${Versions.dagger2}"
     }
 
-    object RxJava {
-        const val java = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
-        const val android = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroid}"
-    }
-
-    object Glide {
-        const val core = "com.github.bumptech.glide:glide:${Versions.glide}"
-        const val compile = "com.github.bumptech.glide:compiler:${Versions.glide}"
+    object Coil {
+        const val coil = "io.coil-kt:coil:${Versions.coil}"
     }
 }

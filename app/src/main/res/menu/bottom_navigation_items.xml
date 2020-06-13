@@ -11,4 +11,9 @@
         android:icon="@drawable/ic_bookmark_black_24dp"
         android:title="@string/bookmarks" />
 
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/profile" />
+
 </menu>

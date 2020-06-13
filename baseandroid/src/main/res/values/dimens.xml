@@ -6,7 +6,6 @@
     <dimen name="textSize">16sp</dimen>
     <dimen name="textSizeMedium">18sp</dimen>
     <dimen name="textSizeLarge">20sp</dimen>
-    <dimen name="textSizeTitle">22sp</dimen>
     <dimen name="dividerHeight">1px</dimen>
 
     <dimen name="parent_padding">12dp</dimen>
@@ -16,6 +15,7 @@
     <dimen name="elevation">@dimen/design_bottom_navigation_elevation</dimen>
 
     <dimen name="toolbarHeight">56dp</dimen>
+    <dimen name="toolbarCornerDimension">24dp</dimen>
     <dimen name="image_avatar">64dp</dimen>
     <dimen name="icon_size">@dimen/design_bottom_navigation_icon_size</dimen>
 

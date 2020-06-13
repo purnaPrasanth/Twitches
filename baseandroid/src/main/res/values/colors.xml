@@ -9,6 +9,7 @@
     <color name="bg_grey">#f8f9fb</color>
 
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
 
     <color name="windowBackground">@color/bg_grey</color>
 

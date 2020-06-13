@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme" parent="BaseTheme">
+    <style name="BaseTheme.V27" parent="BaseTheme" />
+
+    <style name="AppTheme" parent="BaseTheme.V27">
         <item name="android:navigationBarColor">@color/colorPrimary</item>
         <item name="android:windowLightNavigationBar">true</item>
     </style>
