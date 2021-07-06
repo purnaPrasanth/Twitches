@@ -4,9 +4,9 @@
     <bytecodeTargetLevel target="1.7">
       <module name="async" target="1.7" />
       <module name="base" target="1.7" />
-      <module name="MapWitches.app" target="11" />
-      <module name="MapWitches.baseandroid" target="11" />
-      <module name="MapWitches.buildSrc" target="11" />
+      <module name="MapWitches.app" target="15" />
+      <module name="MapWitches.baseandroid" target="15" />
+      <module name="MapWitches.buildSrc" target="15" />
       <module name="MapWitches.location_android" target="1.8" />
       <module name="MapWitches.permissions" target="1.8" />
     </bytecodeTargetLevel>

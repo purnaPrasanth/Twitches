@@ -10,6 +10,8 @@ apply plugin: 'kotlin-kapt'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    api(project(":statemachine"))
+
     api(Libs.Kotlin.stdLib)
     api(Libs.Kotlin.coRoutine)
     api(Libs.Dagger.core)

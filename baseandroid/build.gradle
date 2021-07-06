@@ -49,4 +49,7 @@ dependencies {
     api(Libs.Androidx.ktx)
     api(Libs.Androidx.appCompat)
     api(Libs.Androidx.motionLayout)
+
+    api(Libs.FlowBindings.platformBindings)
+    api(Libs.FlowBindings.material)
 }

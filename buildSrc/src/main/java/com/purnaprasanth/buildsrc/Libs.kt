@@ -52,6 +52,11 @@ object Libs {
             "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coRoutines}"
     }
 
+    object FlowBindings {
+        const val platformBindings = "io.github.reactivecircus.flowbinding:flowbinding-android:${Versions.flow_binding_version}"
+        const val material = "io.github.reactivecircus.flowbinding:flowbinding-material:${Versions.flow_binding_version}"
+    }
+
     object OkHttp {
         const val core = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
         const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"

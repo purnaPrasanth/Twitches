@@ -14,8 +14,8 @@ object Versions {
 
     // Plugin
     const val pluginGradle = "7.0.0-alpha12"
-    const val kotlin = "1.4.21"
-    const val coRoutines = "1.3.7"
+    const val kotlin = "1.5.10"
+    const val coRoutines = "1.5.0"
 
     // Androidx
     const val appCompat = "1.1.0"
@@ -37,6 +37,7 @@ object Versions {
     const val stetho = "1.5.1"
     const val coil = "1.1.1"
     const val epoxy = "3.9.0"
+    const val flow_binding_version = "1.1.0"
 
     // testing
     const val jUnit = "4.12"

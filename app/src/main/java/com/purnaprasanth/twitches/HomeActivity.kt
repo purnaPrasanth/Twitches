@@ -3,22 +3,26 @@ package com.purnaprasanth.twitches
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.purnaprasanth.twitches.databinding.ActivityHomeBinding
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlin.coroutines.CoroutineContext
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity(), CoroutineScope {
     private val binding: ActivityHomeBinding by lazy { ActivityHomeBinding.inflate(layoutInflater) }
+
+    private val job = SupervisorJob()
+
+    override val coroutineContext: CoroutineContext
+        get() = job + Dispatchers.Main
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+    }
 
-        binding.bottomNavigation.setOnNavigationItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.home, R.id.bookmarks, R.id.profile -> {
-                    binding.screenName.text = menuItem.title
-                    true
-                }
-                else -> false
-            }
-        }
+    override fun onDestroy() {
+        job.cancel()
+        super.onDestroy()
     }
 }
