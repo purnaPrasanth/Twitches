@@ -1,5 +1,4 @@
 import com.purnaprasanth.buildsrc.Libs
-import com.purnaprasanth.buildsrc.TestLibs
 
 apply plugin: 'java-library'
 
@@ -10,15 +9,21 @@ apply plugin: 'kotlin-kapt'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    api(project(":statemachine"))
-
     api(Libs.Kotlin.stdLib)
     api(Libs.Kotlin.coRoutine)
     api(Libs.Dagger.core)
     api(Libs.OkHttp.core)
-
-    kapt(Libs.Dagger.compiler)
 }
 
-sourceCompatibility = "7"
-targetCompatibility = "7"
+compileKotlin {
+    kotlinOptions {
+        freeCompilerArgs += [
+                "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi",
+                "-Xuse-experimental=kotlinx.coroutines.ObsoleteCoroutinesApi",
+                "-Xopt-in=kotlin.RequiresOptIn"
+        ]
+    }
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"

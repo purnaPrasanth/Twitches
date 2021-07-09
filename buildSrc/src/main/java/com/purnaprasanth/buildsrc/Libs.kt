@@ -9,8 +9,6 @@ object Libs {
     object Plugins {
         const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.pluginGradle}"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
-        const val kotlinAndroidExtensions =
-            "org.jetbrains.kotlin:kotlin-android-extensions:${Versions.kotlin}"
     }
 
     object Androidx {
