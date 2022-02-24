@@ -33,7 +33,7 @@
     </style>
 
     <style name="BaseTheme.Text" parent="TextAppearance.AppCompat">
-        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/quicksand_medium</item>
         <item name="android:textSize">@dimen/textSize</item>
         <item name="android:textColor">@color/textColorPrimary</item>
     </style>
@@ -51,11 +51,11 @@
     </style>
 
     <style name="BaseTheme.Text.Title" parent="BaseTheme.Text.Medium">
-        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
     </style>
 
     <style name="BaseTheme.Text.SubTitle" parent="BaseTheme.Text.Caption">
-        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/quicksand_medium</item>
     </style>
 
     <style name="BaseTheme.ToolBar" parent="Widget.MaterialComponents.Toolbar">
@@ -68,7 +68,7 @@
     </style>
 
     <style name="BaseTheme.Text.Caption" parent="TextAppearance.AppCompat">
-        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
         <item name="android:textSize">@dimen/textSizeTiny</item>
         <item name="android:textColor">@color/textColorPrimary</item>
     </style>
