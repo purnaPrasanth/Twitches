@@ -8,7 +8,7 @@ object Libs {
 
     object Plugins {
         const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.pluginGradle}"
-        const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+        const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
     }
 
     object Androidx {
@@ -18,7 +18,22 @@ object Libs {
         const val ktx = "androidx.core:core-ktx:${Versions.ktx}"
         const val recyclerview = "androidx.recyclerview:recyclerview:${Versions.recycleView}"
         const val material = "com.google.android.material:material:${Versions.material}"
-        const val motionLayout = "androidx.constraintlayout:constraintlayout:${Versions.motionLayout}"
+        const val motionLayout =
+            "androidx.constraintlayout:constraintlayout:${Versions.motionLayout}"
+
+        const val composeUI = "androidx.compose.ui:ui:${Versions.compose}"
+        const val composeUITooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
+        const val composeFoundation = "androidx.compose.foundation:foundation:${Versions.compose}"
+
+        const val composeMaterial = "androidx.compose.material:material:${Versions.compose}"
+
+        const val composeMaterialIcons =
+            "androidx.compose.material:material-icons-core:${Versions.compose}"
+        const val composeMaterialIconsExtended =
+            "androidx.compose.material:material-icons-extended:${Versions.compose}"
+        const val composeActivity = "androidx.activity:activity-compose:${Versions.composeActivity}"
+
+        const val composeViewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.composeViewModel}"
     }
 
     object PlayServices {
@@ -44,15 +59,16 @@ object Libs {
     }
 
     object Kotlin {
-        const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
         const val coRoutine = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coRoutines}"
         const val coRoutineAndroid =
             "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coRoutines}"
     }
 
     object FlowBindings {
-        const val platformBindings = "io.github.reactivecircus.flowbinding:flowbinding-android:${Versions.flow_binding_version}"
-        const val material = "io.github.reactivecircus.flowbinding:flowbinding-material:${Versions.flow_binding_version}"
+        const val platformBindings =
+            "io.github.reactivecircus.flowbinding:flowbinding-android:${Versions.flow_binding_version}"
+        const val material =
+            "io.github.reactivecircus.flowbinding:flowbinding-material:${Versions.flow_binding_version}"
     }
 
     object OkHttp {

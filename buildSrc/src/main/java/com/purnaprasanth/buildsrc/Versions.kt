@@ -7,37 +7,40 @@ package com.purnaprasanth.buildsrc
 object Versions {
 
     //andorid
-    const val compileSdk = 29
-    const val buildTools = "30.0.2"
+    const val compileSdk = 31
+    const val buildTools = "31.0.0"
     const val minSdk = 23
-    const val targetSdk = 29
+    const val targetSdk = 31
 
     // Plugin
-    const val pluginGradle = "7.0.0-alpha12"
-    const val kotlin = "1.5.10"
-    const val coRoutines = "1.5.0"
+    const val pluginGradle = "7.1.0"
+    const val kotlin = "1.6.0"
+    const val coRoutines = "1.5.2"
 
-    // Androidx
-    const val appCompat = "1.1.0"
-    const val constraintLayout = "1.1.3"
-    const val ktx = "1.3.0"
+    // Jetpack
+    const val appCompat = "1.4.0-beta01"
+    const val constraintLayout = "2.1.1"
+    const val ktx = "1.7.0-rc01"
     const val recycleView = "1.0.0"
     const val lifecycle = "2.1.0"
     const val navigation = "2.1.0"
     const val browser = "1.0.0"
     const val room = "2.2.1"
     const val playServices = "17.0.0"
-    const val material = "1.3.0-beta01"
+    const val material = "1.5.0-alpha04"
     const val motionLayout = "2.0.0-beta1"
+    const val compose = "1.0.5"
+    const val composeActivity = "1.3.1"
+    const val composeViewModel = "1.0.0-alpha07"
 
     // Third Party
-    const val dagger2 = "2.24"
-    const val okHttp = "4.3.0"
+    const val dagger2 = "2.39.1"
+    const val okHttp = "4.9.2"
     const val retrofit = "2.3.0"
     const val stetho = "1.5.1"
     const val coil = "1.1.1"
     const val epoxy = "3.9.0"
-    const val flow_binding_version = "1.1.0"
+    const val flow_binding_version = "1.2.0"
 
     // testing
     const val jUnit = "4.12"
