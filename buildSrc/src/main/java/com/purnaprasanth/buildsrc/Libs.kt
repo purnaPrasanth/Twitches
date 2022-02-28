@@ -9,6 +9,7 @@ object Libs {
     object Plugins {
         const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.pluginGradle}"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+        const val hiltPlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
     }
 
     object Androidx {
@@ -33,7 +34,10 @@ object Libs {
             "androidx.compose.material:material-icons-extended:${Versions.compose}"
         const val composeActivity = "androidx.activity:activity-compose:${Versions.composeActivity}"
 
-        const val composeViewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.composeViewModel}"
+        const val composeViewModel =
+            "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.composeViewModel}"
+        const val constraintCompose =
+            "androidx.constraintlayout:constraintlayout-compose:1.0.0"
     }
 
     object PlayServices {
@@ -49,6 +53,8 @@ object Libs {
     object Navigation {
         const val fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
         const val ui = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+        const val composeNavigation =
+            "androidx.navigation:navigation-compose:${Versions.navigation}"
     }
 
     object Room {
@@ -98,13 +104,9 @@ object Libs {
         const val okhttp = "com.facebook.stetho:stetho-okhttp3:${Versions.stetho}"
     }
 
-    object Dagger {
-        const val core = "com.google.dagger:dagger:${Versions.dagger2}"
-        const val android = "com.google.dagger:dagger-android:${Versions.dagger2}"
-        const val androidSupport = "com.google.dagger:dagger-android-support:${Versions.dagger2}"
-        const val compiler = "com.google.dagger:dagger-compiler:${Versions.dagger2}"
-        const val androidSupportCompiler =
-            "com.google.dagger:dagger-android-processor:${Versions.dagger2}"
+    object Hilt {
+        const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hilt}"
+        const val hiltAnnotation = "com.google.dagger:hilt-compiler:${Versions.hilt}"
     }
 
     object Coil {

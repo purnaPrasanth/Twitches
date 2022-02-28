@@ -11,6 +11,7 @@ buildscript {
     }
     dependencies {
         classpath(Libs.Plugins.androidGradlePlugin)
+        classpath(Libs.Plugins.hiltPlugin)
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -18,7 +19,7 @@ buildscript {
 }
 
 plugins {
-    id "org.jetbrains.kotlin.jvm" version "1.5.31"
+    id "org.jetbrains.kotlin.jvm" version "1.6.10"
 }
 
 allprojects {

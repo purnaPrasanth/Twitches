@@ -18,7 +18,10 @@ import com.purnaprasanth.twitches.baseandroid.theme.myDarkColors
 import com.purnaprasanth.twitches.baseandroid.theme.myLightColors
 import com.purnaprasanth.twitches.bottomnavigation.BottomNavigationItem
 import com.purnaprasanth.twitches.bottomnavigation.MyBottomNavigation
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class HomeActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -14,7 +14,7 @@ object Versions {
 
     // Plugin
     const val pluginGradle = "7.1.0"
-    const val kotlin = "1.6.0"
+    const val kotlin = "1.6.10"
     const val coRoutines = "1.5.2"
 
     // Jetpack
@@ -23,18 +23,18 @@ object Versions {
     const val ktx = "1.7.0-rc01"
     const val recycleView = "1.0.0"
     const val lifecycle = "2.1.0"
-    const val navigation = "2.1.0"
+    const val navigation = "2.4.1"
     const val browser = "1.0.0"
     const val room = "2.2.1"
     const val playServices = "17.0.0"
     const val material = "1.5.0-alpha04"
     const val motionLayout = "2.0.0-beta1"
-    const val compose = "1.0.5"
+    const val compose = "1.1.1"
     const val composeActivity = "1.3.1"
     const val composeViewModel = "1.0.0-alpha07"
 
     // Third Party
-    const val dagger2 = "2.39.1"
+    const val hilt = "2.41"
     const val okHttp = "4.9.2"
     const val retrofit = "2.3.0"
     const val stetho = "1.5.1"
