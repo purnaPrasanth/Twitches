@@ -1,0 +1,7 @@
+import com.purnaprasanth.buildsrc.Libs
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation(Libs.Kotlin.coRoutine)
+}

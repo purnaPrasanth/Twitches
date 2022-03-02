@@ -1,0 +1,7 @@
+import com.purnaprasanth.buildsrc.Libs
+
+apply from: Libs.commonAndroid
+
+dependencies {
+
+}

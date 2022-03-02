@@ -6,6 +6,12 @@ package com.purnaprasanth.buildsrc
 
 object Libs {
 
+    private const val path = "../commonGradleFiles/"
+    const val common = "${path}commonDependencies.gradle"
+    const val commonAndroid = "${path}commonAndroidDependencies.gradle"
+
+    const val dependency = "./gradleScripts/dependencies.gradle"
+
     object Plugins {
         const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.pluginGradle}"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"

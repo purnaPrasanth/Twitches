@@ -9,6 +9,8 @@ apply plugin: "kotlin-kapt"
 
 apply plugin: "dagger.hilt.android.plugin"
 
+apply from: Libs.dependency
+
 android {
     compileSdkVersion Versions.compileSdk
     buildToolsVersion Versions.buildTools
@@ -42,13 +44,4 @@ android {
     buildFeatures {
         compose true
     }
-}
-
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation(project(":baseandroid"))
-
-    implementation(Libs.Hilt.hiltAndroid)
-    kapt(Libs.Hilt.hiltAnnotation)
 }

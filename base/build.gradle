@@ -6,12 +6,7 @@ apply plugin: 'kotlin'
 
 apply plugin: 'kotlin-kapt'
 
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    api(Libs.Kotlin.coRoutine)
-    api(Libs.OkHttp.core)
-}
+apply from: Libs.dependency
 
 compileKotlin {
     kotlinOptions {

@@ -1,0 +1,28 @@
+import com.purnaprasanth.buildsrc.Libs
+
+dependencies {
+    implementation(Libs.Kotlin.coRoutineAndroid)
+
+    implementation(Libs.Androidx.composeUI)
+    implementation(Libs.Androidx.composeUITooling)
+    implementation(Libs.Androidx.composeFoundation)
+    implementation(Libs.Androidx.composeMaterial)
+    implementation(Libs.Androidx.composeMaterialIcons)
+    implementation(Libs.Androidx.composeMaterialIconsExtended)
+    implementation(Libs.Androidx.composeActivity)
+    implementation(Libs.Androidx.composeViewModel)
+    implementation(Libs.Androidx.constraintCompose)
+
+    implementation(Libs.Navigation.composeNavigation)
+
+    implementation(Libs.Hilt.hiltAndroid)
+    kapt(Libs.Hilt.hiltAnnotation)
+
+    implementation(Libs.Androidx.material)
+    implementation(Libs.Androidx.ktx)
+    implementation(Libs.Androidx.appCompat)
+    implementation(Libs.Androidx.motionLayout)
+
+    implementation(Libs.FlowBindings.platformBindings)
+    implementation(Libs.FlowBindings.material)
+}

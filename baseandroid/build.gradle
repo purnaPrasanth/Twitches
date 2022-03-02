@@ -8,6 +8,8 @@ plugins {
     id 'dagger.hilt.android.plugin'
 }
 
+apply from: Libs.dependency
+
 android {
     compileSdkVersion Versions.compileSdk
 
@@ -27,6 +29,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -43,33 +46,4 @@ android {
     buildFeatures {
         compose true
     }
-}
-
-dependencies {
-    implementation(Libs.Kotlin.coRoutineAndroid)
-
-    api(project(":base"))
-
-    api(Libs.Androidx.composeUI)
-    api(Libs.Androidx.composeUITooling)
-    api(Libs.Androidx.composeFoundation)
-    api(Libs.Androidx.composeMaterial)
-    api(Libs.Androidx.composeMaterialIcons)
-    api(Libs.Androidx.composeMaterialIconsExtended)
-    api(Libs.Androidx.composeActivity)
-    api(Libs.Androidx.composeViewModel)
-    api(Libs.Androidx.constraintCompose)
-
-    api(Libs.Navigation.composeNavigation)
-
-    implementation(Libs.Hilt.hiltAndroid)
-    kapt(Libs.Hilt.hiltAnnotation)
-
-    api(Libs.Androidx.material)
-    api(Libs.Androidx.ktx)
-    api(Libs.Androidx.appCompat)
-    api(Libs.Androidx.motionLayout)
-
-    api(Libs.FlowBindings.platformBindings)
-    api(Libs.FlowBindings.material)
 }
