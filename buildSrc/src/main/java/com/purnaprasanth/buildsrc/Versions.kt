@@ -13,7 +13,7 @@ object Versions {
     const val targetSdk = 31
 
     // Plugin
-    const val pluginGradle = "7.1.0"
+    const val pluginGradle = "7.1.2"
     const val kotlin = "1.6.10"
     const val coRoutines = "1.5.2"
 

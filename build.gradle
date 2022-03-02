@@ -9,6 +9,7 @@ buildscript {
         mavenCentral()
         maven { url "https://oss.jfrog.org/artifactory/libs-release" }
     }
+
     dependencies {
         classpath(Libs.Plugins.androidGradlePlugin)
         classpath(Libs.Plugins.hiltPlugin)
