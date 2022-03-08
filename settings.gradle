@@ -1,5 +1,7 @@
-rootProject.name='MapWitches'
+rootProject.name = 'MapWitches'
 
 include ':app'
 include ':base'
 include ':baseandroid'
+include ':auth'
+include ':authandroid'

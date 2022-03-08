@@ -1,5 +1,7 @@
 import com.purnaprasanth.buildsrc.Libs
 
+apply from: Libs.common
+
 dependencies {
     implementation(Libs.Kotlin.coRoutineAndroid)
 
@@ -12,17 +14,8 @@ dependencies {
     implementation(Libs.Androidx.composeActivity)
     implementation(Libs.Androidx.composeViewModel)
     implementation(Libs.Androidx.constraintCompose)
-
     implementation(Libs.Navigation.composeNavigation)
 
     implementation(Libs.Hilt.hiltAndroid)
     kapt(Libs.Hilt.hiltAnnotation)
-
-    implementation(Libs.Androidx.material)
-    implementation(Libs.Androidx.ktx)
-    implementation(Libs.Androidx.appCompat)
-    implementation(Libs.Androidx.motionLayout)
-
-    implementation(Libs.FlowBindings.platformBindings)
-    implementation(Libs.FlowBindings.material)
 }

@@ -11,7 +11,7 @@ sealed class UserAuthState {
     /**
      * When the User is LoggedIn
      */
-    object Autherized : UserAuthState()
+    object Authorised : UserAuthState()
 
     /**
      * When the user is LoggedOut

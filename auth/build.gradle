@@ -1,0 +1,12 @@
+import com.purnaprasanth.buildsrc.Libs
+
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'kotlin'
+}
+
+apply from: Libs.dependency
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8

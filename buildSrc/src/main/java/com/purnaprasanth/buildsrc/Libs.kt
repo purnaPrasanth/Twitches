@@ -70,6 +70,11 @@ object Libs {
         const val roomRxJava = "androidx.room:room-rxjava2:${Versions.room}"
     }
 
+    object DataStore {
+        const val dataStore = "androidx.datastore:datastore:${Versions.dataStore}"
+        const val dataStoreCore = "androidx.datastore:datastore-core:${Versions.dataStore}"
+    }
+
     object Kotlin {
         const val coRoutine = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coRoutines}"
         const val coRoutineAndroid =
@@ -117,5 +122,9 @@ object Libs {
 
     object Coil {
         const val coil = "io.coil-kt:coil:${Versions.coil}"
+    }
+
+    object Auth {
+        const val appAuth = "net.openid:appauth:${Versions.appAuth}"
     }
 }

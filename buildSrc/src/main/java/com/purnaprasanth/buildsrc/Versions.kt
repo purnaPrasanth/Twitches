@@ -32,6 +32,7 @@ object Versions {
     const val compose = "1.1.1"
     const val composeActivity = "1.3.1"
     const val composeViewModel = "1.0.0-alpha07"
+    const val dataStore = "1.0.0"
 
     // Third Party
     const val hilt = "2.41"
@@ -41,6 +42,7 @@ object Versions {
     const val coil = "1.1.1"
     const val epoxy = "3.9.0"
     const val flow_binding_version = "1.2.0"
+    const val appAuth = "0.11.1"
 
     // testing
     const val jUnit = "4.12"

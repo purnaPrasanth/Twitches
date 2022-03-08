@@ -1,8 +1,6 @@
 import com.purnaprasanth.buildsrc.Libs
-import com.purnaprasanth.buildsrc.Versions
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
     repositories {
         google()
