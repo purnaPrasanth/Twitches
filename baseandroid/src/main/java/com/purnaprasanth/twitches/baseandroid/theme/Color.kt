@@ -1,3 +1,4 @@
+@file:Suppress("MagicNumber")
 package com.purnaprasanth.twitches.baseandroid.theme
 
 import androidx.compose.material.Colors

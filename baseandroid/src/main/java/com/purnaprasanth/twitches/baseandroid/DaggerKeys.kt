@@ -1,3 +1,4 @@
+@file:Suppress("MatchingDeclarationName")
 package com.purnaprasanth.twitches.baseandroid
 
 import androidx.lifecycle.ViewModel

@@ -6,13 +6,13 @@ import androidx.compose.runtime.compositionLocalOf
 import androidx.lifecycle.ViewModelProvider
 
 object LocalViewModelFactory {
-    private val LocalViewModelFactory = compositionLocalOf<ViewModelProvider.Factory?> { null }
+    private val LocalViewModelFactory_ = compositionLocalOf<ViewModelProvider.Factory?> { null }
 
     val current: ViewModelProvider.Factory?
         @Composable
-        get() = LocalViewModelFactory.current
+        get() = LocalViewModelFactory_.current
 
     infix fun provides(
         viewModelFactory: ViewModelProvider.Factory
-    ): ProvidedValue<ViewModelProvider.Factory?> = LocalViewModelFactory.provides(viewModelFactory)
+    ): ProvidedValue<ViewModelProvider.Factory?> = LocalViewModelFactory_.provides(viewModelFactory)
 }
