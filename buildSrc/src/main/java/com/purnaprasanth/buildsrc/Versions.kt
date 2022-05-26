@@ -30,7 +30,7 @@ object Versions {
     const val playServices = "17.0.0"
     const val material = "1.6.0"
     const val motionLayout = "2.0.0-beta1"
-    const val compose = "1.1.1"
+    const val compose = "1.2.0-beta02"
     const val composeActivity = "1.4.0"
     const val composeViewModel = "2.4.1"
     const val dataStore = "1.0.0"

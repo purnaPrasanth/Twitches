@@ -13,8 +13,11 @@ class AppViewModelFactory(
     private val viewModelProviders: Map<Class<out ViewModel>, Provider<ViewModel>>
 ) : ViewModelProvider.Factory {
 
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return viewModelProviders[modelClass]?.get() as T
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return (viewModelProviders[modelClass]
+            ?: throw IllegalStateException(
+                "provider is not found for ViewModel of type ${modelClass.simpleName}"
+            )).get() as T
     }
 }
 

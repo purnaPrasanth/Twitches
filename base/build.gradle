@@ -11,9 +11,9 @@ apply from: Libs.dependency
 compileKotlin {
     kotlinOptions {
         freeCompilerArgs += [
-                "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
-                "-Xopt-in=kotlinx.coroutines.ObsoleteCoroutinesApi",
-                "-Xopt-in=kotlin.RequiresOptIn"
+                "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+                "-opt-in=kotlinx.coroutines.ObsoleteCoroutinesApi",
+                "-opt-in=kotlin.RequiresOptIn"
         ]
     }
 }
