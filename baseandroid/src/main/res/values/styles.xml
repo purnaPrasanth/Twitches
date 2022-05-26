@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="BaseTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="BaseTheme">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:textAppearance">@style/BaseTheme.Text</item>
         <item name="android:textAppearanceSmall">@style/BaseTheme.Text.Small</item>
@@ -19,20 +16,14 @@
         <item name="android:divider">@color/textColorPrimary</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="twitchesBottomNavAppearance">@style/BaseTheme.BottomNavigation</item>
-        <item name="textAppearanceCaption">@style/BaseTheme.Text.Caption</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:toolbarStyle">@style/BaseTheme.ToolBar</item>
     </style>
 
-    <style name="BaseTheme.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name="itemBackground">@null</item>
-        <item name="itemIconTint">@color/bottom_navigation_item_tint</item>
-        <item name="labelVisibilityMode">selected</item>
-        <item name="itemTextColor">@color/bottom_navigation_item_tint</item>
-        <item name="itemIconSize">@dimen/icon_size</item>
+    <style name="BaseTheme.BottomNavigation">
     </style>
 
-    <style name="BaseTheme.Text" parent="TextAppearance.AppCompat">
+    <style name="BaseTheme.Text">
         <item name="android:fontFamily">@font/quicksand_medium</item>
         <item name="android:textSize">@dimen/textSize</item>
         <item name="android:textColor">@color/textColorPrimary</item>
@@ -58,16 +49,13 @@
         <item name="android:fontFamily">@font/quicksand_medium</item>
     </style>
 
-    <style name="BaseTheme.ToolBar" parent="Widget.MaterialComponents.Toolbar">
+    <style name="BaseTheme.ToolBar">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="titleTextAppearance">?android:titleTextAppearance</item>
-        <item name="subtitleTextAppearance">?android:subtitleTextAppearance</item>
-        <item name="android:elevation">@dimen/elevation</item>
         <item name="android:background">@color/white</item>
     </style>
 
-    <style name="BaseTheme.Text.Caption" parent="TextAppearance.AppCompat">
+    <style name="BaseTheme.Text.Caption">
         <item name="android:fontFamily">@font/quicksand_bold</item>
         <item name="android:textSize">@dimen/textSizeTiny</item>
         <item name="android:textColor">@color/textColorPrimary</item>

@@ -26,6 +26,7 @@ plugins {
 
 subprojects {
     apply plugin: "io.gitlab.arturbosch.detekt"
+    apply plugin: "com.github.ben-manes.versions"
     detekt {
         config = files("${project.rootDir}/config/detekt/detekt.yml")
         parallel = true
