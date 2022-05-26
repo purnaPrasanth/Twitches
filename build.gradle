@@ -11,6 +11,7 @@ buildscript {
     dependencies {
         classpath(Libs.Plugins.androidGradlePlugin)
         classpath(Libs.Plugins.hiltPlugin)
+        classpath(Libs.Plugins.versionChecker)
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -18,8 +19,9 @@ buildscript {
 }
 
 plugins {
-    id "org.jetbrains.kotlin.jvm" version "1.6.10"
+    id "org.jetbrains.kotlin.jvm" version "1.6.21"
     id "io.gitlab.arturbosch.detekt" version "1.19.0"
+    id "com.github.ben-manes.versions" version "0.42.0"
 }
 
 subprojects {
@@ -27,6 +29,14 @@ subprojects {
     detekt {
         config = files("${project.rootDir}/config/detekt/detekt.yml")
         parallel = true
+    }
+    tasks.named("dependencyUpdates").configure {
+        rejectVersionIf {
+            def version = it.candidate.version
+            def stableKeyword = ['RELEASE', 'FINAL', 'GA'].any { stableTag -> version.toUpperCase().contains(stableTag) }
+            def regex = /^[0-9,.v-]+(-r)?$/
+            return !stableKeyword && !(version ==~ regex)
+        }
     }
 }
 

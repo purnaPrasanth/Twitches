@@ -16,6 +16,8 @@ object Libs {
         const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.pluginGradle}"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
         const val hiltPlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
+        const val versionChecker =
+            "com.github.ben-manes:gradle-versions-plugin:${Versions.versionChecker}"
     }
 
     object Androidx {
@@ -26,7 +28,7 @@ object Libs {
         const val recyclerview = "androidx.recyclerview:recyclerview:${Versions.recycleView}"
         const val material = "com.google.android.material:material:${Versions.material}"
         const val motionLayout =
-            "androidx.constraintlayout:constraintlayout:${Versions.motionLayout}"
+            "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
 
         const val composeUI = "androidx.compose.ui:ui:${Versions.compose}"
         const val composeUITooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
@@ -43,7 +45,7 @@ object Libs {
         const val composeViewModel =
             "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.composeViewModel}"
         const val constraintCompose =
-            "androidx.constraintlayout:constraintlayout-compose:1.0.0"
+            "androidx.constraintlayout:constraintlayout-compose:1.0.1"
     }
 
     object PlayServices {
