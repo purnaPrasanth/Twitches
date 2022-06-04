@@ -1,27 +1,9 @@
-import com.purnaprasanth.buildsrc.Libs
-
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url "https://oss.jfrog.org/artifactory/libs-release" }
-    }
-
-    dependencies {
-        classpath(Libs.Plugins.androidGradlePlugin)
-        classpath(Libs.Plugins.hiltPlugin)
-        classpath(Libs.Plugins.versionChecker)
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
-
 plugins {
+    id 'com.android.application' version '7.1.2' apply false
     id "org.jetbrains.kotlin.jvm" version "1.6.21"
     id "io.gitlab.arturbosch.detekt" version "1.19.0"
     id "com.github.ben-manes.versions" version "0.42.0"
+    id "com.google.dagger.hilt.android" version "2.42" apply false
 }
 
 subprojects {
@@ -38,12 +20,5 @@ subprojects {
             def regex = /^[0-9,.v-]+(-r)?$/
             return !stableKeyword && !(version ==~ regex)
         }
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
     }
 }

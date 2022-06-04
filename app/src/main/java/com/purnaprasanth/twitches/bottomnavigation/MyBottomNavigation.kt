@@ -14,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 fun MyBottomNavigation(
     listOfItems: List<BottomNavigationItem> = listOfBottomNavigationItems,
     onNavigationSelected: (BottomNavigationItem) -> Unit
-): Unit {
+) {
     BottomNavigation {
         val selected = remember {
             mutableStateOf<BottomNavigationItem>(BottomNavigationItem.Home)

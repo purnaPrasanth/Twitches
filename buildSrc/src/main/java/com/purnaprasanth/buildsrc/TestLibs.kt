@@ -7,8 +7,18 @@ package com.purnaprasanth.buildsrc
 object TestLibs {
 
     object Junit {
-        const val jUnit = "junit:junit:${Versions.jUnit}"
+        const val jUnit = "org.junit:junit-bom:${Versions.jUnit}"
+        const val jupiter = "org.junit.jupiter:junit-jupiter:${Versions.jUnit}"
         const val atslJunit = "androidx.test.ext:junit:${Versions.atslExt}"
+    }
+
+    object CoRoutines {
+        const val kotlinx =
+            "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coRoutineTest}"
+    }
+
+    object Mockk {
+        const val mockk = "io.mockk:mockk:${Versions.mockk}"
     }
 
     object AndroidX {

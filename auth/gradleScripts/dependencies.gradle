@@ -1,3 +1,13 @@
 import com.purnaprasanth.buildsrc.Libs
+import com.purnaprasanth.buildsrc.TestLibs
 
 apply from: Libs.common
+
+dependencies {
+    implementation(Libs.DataStore.core)
+
+    testImplementation(enforcedPlatform(TestLibs.Junit.jUnit))
+    testImplementation(TestLibs.Junit.jupiter)
+    testImplementation(TestLibs.Mockk.mockk)
+    testImplementation(TestLibs.CoRoutines.kotlinx)
+}

@@ -74,7 +74,7 @@ object Libs {
 
     object DataStore {
         const val dataStore = "androidx.datastore:datastore:${Versions.dataStore}"
-        const val dataStoreCore = "androidx.datastore:datastore-core:${Versions.dataStore}"
+        const val core = "androidx.datastore:datastore-core:${Versions.dataStore}"
     }
 
     object Kotlin {

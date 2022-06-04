@@ -1,13 +1,12 @@
 import com.purnaprasanth.buildsrc.Libs
 import com.purnaprasanth.buildsrc.Versions
 
-apply plugin: 'com.android.application'
-
-apply plugin: 'kotlin-android'
-
-apply plugin: "dagger.hilt.android.plugin"
-
-apply plugin: "kotlin-kapt"
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
 
 apply from: Libs.dependency
 

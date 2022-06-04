@@ -1,7 +1,9 @@
 package com.purnaprasanth.auth
 
 sealed class AuthorisationState<T : AuthorisationData> {
-    object UnAuthorised : AuthorisationState<Nothing>()
+    class UnAuthorised<T : AuthorisationData> : AuthorisationState<T>()
+
+    class Authorising<T : AuthorisationData> : AuthorisationState<Nothing>()
 
     data class Success<T : AuthorisationData>(
         val data: AuthorisationData
