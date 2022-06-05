@@ -1,0 +1,10 @@
+import com.purnaprasanth.buildsrc.Libs
+
+apply from: Libs.commonAndroid
+
+dependencies {
+    implementation(Libs.Auth.appAuth)
+
+    implementation(project(":auth"))
+    implementation(Libs.DataStore.dataStore)
+}
