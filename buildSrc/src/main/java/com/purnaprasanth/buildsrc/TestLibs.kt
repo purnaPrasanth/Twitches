@@ -17,6 +17,10 @@ object TestLibs {
             "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coRoutineTest}"
     }
 
+    object Kotlin {
+        const val kotlinJunit = "org.jetbrains.kotlin:kotlin-test-junit:${Versions.kotlin}"
+    }
+
     object Mockk {
         const val mockk = "io.mockk:mockk:${Versions.mockk}"
     }
