@@ -129,4 +129,11 @@ object Libs {
     object Auth {
         const val appAuth = "net.openid:appauth:${Versions.appAuth}"
     }
+
+    object Arrow {
+        const val core = "io.arrow-kt:arrow-core:${Versions.arrow}"
+        const val fx = "io.arrow-kt:arrow-fx-coroutines:${Versions.arrow}"
+        const val optics = "io.arrow-kt:arrow-optics:${Versions.arrow}"
+        const val meta = "io.arrow-kt:arrow-meta:${Versions.arrow}"
+    }
 }

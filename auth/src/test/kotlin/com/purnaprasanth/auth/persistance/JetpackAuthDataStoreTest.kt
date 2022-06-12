@@ -2,6 +2,7 @@ package com.purnaprasanth.auth.persistance
 
 import androidx.datastore.core.DataStore
 import com.purnaprasanth.auth.AuthorisationData
+import io.kotest.matchers.shouldBe
 import io.mockk.*
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.test.runTest
@@ -33,6 +34,6 @@ internal class JetpackAuthDataStoreTest {
 
         verify(exactly = 1) { dataStore.data }
 
-        assert(actual === mockFlow)
+        actual shouldBe mockFlow
     }
 }

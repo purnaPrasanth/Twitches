@@ -4,4 +4,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation(Libs.Kotlin.coRoutine)
+    implementation(Libs.Arrow.core)
+    implementation(Libs.Arrow.fx)
 }

@@ -44,9 +44,11 @@ object Versions {
     const val epoxy = "3.9.0"
     const val flow_binding_version = "1.2.0"
     const val appAuth = "0.11.1"
+    const val arrow = "1.1.2"
 
     // testing
     const val jUnit = "5.8.2"
+    const val kotest = "5.3.0"
     const val atslExt = "1.1.0"
     const val espresso = "3.1.1"
     const val junitExt = "1.1.1"

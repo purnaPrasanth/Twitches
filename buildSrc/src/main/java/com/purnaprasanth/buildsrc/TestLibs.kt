@@ -12,6 +12,12 @@ object TestLibs {
         const val atslJunit = "androidx.test.ext:junit:${Versions.atslExt}"
     }
 
+    object KoTest {
+        const val framework = "io.kotest:kotest-runner-junit5:${Versions.kotest}"
+        const val assertions = "io.kotest:kotest-assertions-core:${Versions.kotest}"
+        const val propertyTesting = "io.kotest:kotest-property:${Versions.kotest}"
+    }
+
     object CoRoutines {
         const val kotlinx =
             "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coRoutineTest}"

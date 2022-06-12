@@ -1,4 +1,5 @@
 import com.purnaprasanth.buildsrc.Libs
+import com.purnaprasanth.buildsrc.TestLibs
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -6,4 +7,12 @@ dependencies {
     implementation(project(":base"))
 
     implementation(Libs.Kotlin.coRoutine)
+    implementation(Libs.Arrow.core)
+    implementation(Libs.Arrow.fx)
+
+    testImplementation(TestLibs.Mockk.mockk)
+    testImplementation(TestLibs.CoRoutines.kotlinx)
+    testImplementation(TestLibs.KoTest.assertions)
+    testImplementation(TestLibs.KoTest.framework)
+    testRuntimeOnly(TestLibs.Junit.jupiter)
 }
