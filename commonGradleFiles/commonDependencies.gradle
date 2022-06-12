@@ -9,6 +9,7 @@ dependencies {
     implementation(Libs.Kotlin.coRoutine)
     implementation(Libs.Arrow.core)
     implementation(Libs.Arrow.fx)
+    implementation(Libs.Arrow.optics)
 
     testImplementation(TestLibs.Mockk.mockk)
     testImplementation(TestLibs.CoRoutines.kotlinx)

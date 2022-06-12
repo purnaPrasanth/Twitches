@@ -1,11 +1,13 @@
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+
 plugins {
-    id("com.android.application").version("7.1.2").apply(false)
-    id("org.jetbrains.kotlin.jvm").version("1.6.21")
-    id("io.gitlab.arturbosch.detekt").version("1.19.0")
-    id("com.github.ben-manes.versions").version("0.42.0")
-    id("com.google.dagger.hilt.android").version("2.42").apply(false)
-    id("com.android.library").version("7.1.2").apply(false)
-    id("org.jetbrains.kotlin.android").version("1.6.21").apply(false)
+    id("com.android.application") version "7.2.1" apply false
+    id("org.jetbrains.kotlin.jvm") version "1.7.0" apply false
+    id("io.gitlab.arturbosch.detekt") version "1.20.0"
+    id("com.github.ben-manes.versions") version "0.42.0"
+    id("com.google.dagger.hilt.android") version "2.42" apply false
+    id("com.android.library") version "7.2.1" apply false
+    id("org.jetbrains.kotlin.android") version ("1.7.0") apply false
 }
 
 subprojects {
@@ -15,17 +17,20 @@ subprojects {
         config = files("${project.rootDir}/config/detekt/detekt.yml")
         parallel = true
     }
-    /*tasks.named(
-        "dependencyUpdates",
-        com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask::class.java
-    ).configure {
+}
+
+allprojects {
+    tasks.withType<DependencyUpdatesTask> {
         rejectVersionIf {
-            val version = this.candidate.version
-            val stableKeyword = arrayOf("RELEASE", "FINAL", "GA").any { stableTag ->
-                version.toUpperCase().contains(stableTag)
-            }
-            val regex = Regex("/^[0-9,.v-]+(-r)?$/")
-            !stableKeyword && !(version.matches(regex))
+            isNonStable(candidate.version)
         }
-    }*/
+    }
+}
+
+fun isNonStable(version: String): Boolean {
+    logger.log(LogLevel.INFO, "updates plugin: $version")
+    val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.toUpperCase().contains(it) }
+    val regex = "^[0-9,.v-]+(-r)?$".toRegex()
+    val isStable = stableKeyword || regex.matches(version)
+    return isStable.not()
 }

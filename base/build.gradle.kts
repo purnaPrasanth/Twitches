@@ -14,7 +14,6 @@ tasks.compileKotlin {
             addAll(
                 listOf(
                     "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
-                    "-opt-in=kotlinx.coroutines.ObsoleteCoroutinesApi",
                     "-opt-in=kotlin.RequiresOptIn"
                 )
             )

@@ -20,7 +20,7 @@ object TestLibs {
 
     object CoRoutines {
         const val kotlinx =
-            "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coRoutineTest}"
+            "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coRoutines}"
     }
 
     object Kotlin {

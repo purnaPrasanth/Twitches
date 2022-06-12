@@ -13,26 +13,25 @@ object Versions {
     const val targetSdk = 31
 
     // Plugin
-    const val pluginGradle = "7.1.2"
-    const val kotlin = "1.6.21"
-    const val coRoutines = "1.6.1"
+    const val pluginGradle = "7.2.1"
+    const val kotlin = "1.7.0"
+    const val coRoutines = "1.6.4"
     const val versionChecker = "0.42.0"
 
     // Jetpack
-    const val appCompat = "1.4.1"
+    const val appCompat = "1.4.2"
     const val constraintLayout = "2.1.4"
-    const val ktx = "1.7.0"
     const val recycleView = "1.0.0"
     const val lifecycle = "2.1.0"
-    const val navigation = "2.4.2"
+    const val navigation = "2.5.0"
     const val browser = "1.0.0"
     const val room = "2.2.1"
     const val playServices = "17.0.0"
-    const val material = "1.6.0"
-    const val motionLayout = "2.0.0-beta1"
-    const val compose = "1.2.0-beta02"
-    const val composeActivity = "1.4.0"
-    const val composeViewModel = "2.4.1"
+    const val material = "1.6.1"
+    const val compose = "1.1.1"
+    const val composeCompiler = "1.2.0"
+    const val composeActivity = "1.5.0"
+    const val composeViewModel = "2.5.0"
     const val dataStore = "1.0.0"
 
     // Third Party
@@ -48,10 +47,9 @@ object Versions {
 
     // testing
     const val jUnit = "5.8.2"
-    const val kotest = "5.3.0"
+    const val kotest = "5.3.2"
     const val atslExt = "1.1.0"
     const val espresso = "3.1.1"
     const val junitExt = "1.1.1"
     const val mockk = "1.12.4"
-    const val coRoutineTest = "1.6.0"
 }

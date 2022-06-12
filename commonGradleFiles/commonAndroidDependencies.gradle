@@ -23,7 +23,6 @@ dependencies {
     kapt(Libs.Hilt.hiltAnnotation)
 
     implementation(Libs.Androidx.material)
-    implementation(Libs.Androidx.ktx)
     implementation(Libs.Androidx.appCompat)
     implementation(Libs.Androidx.motionLayout)
 

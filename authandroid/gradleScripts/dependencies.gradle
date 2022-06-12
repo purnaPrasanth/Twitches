@@ -3,5 +3,7 @@ import com.purnaprasanth.buildsrc.Libs
 apply from: Libs.commonAndroid
 
 dependencies {
-    implementation(project(":twitchauthandroid"))
+    implementation(project(":auth"))
+
+    implementation(Libs.Auth.appAuth)
 }

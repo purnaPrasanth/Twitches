@@ -24,7 +24,6 @@ object Libs {
         const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
         const val constraintLayout =
             "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
-        const val ktx = "androidx.core:core-ktx:${Versions.ktx}"
         const val recyclerview = "androidx.recyclerview:recyclerview:${Versions.recycleView}"
         const val material = "com.google.android.material:material:${Versions.material}"
         const val motionLayout =

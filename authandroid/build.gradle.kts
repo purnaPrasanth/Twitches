@@ -2,27 +2,23 @@ import com.purnaprasanth.buildsrc.Libs
 import com.purnaprasanth.buildsrc.Versions
 
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
-    id("dagger.hilt.android.plugin")
 }
 
-apply(from = Libs.dependency)
-
 android {
+    namespace = "com.purnaprasanth.authandroid"
     compileSdk = Versions.compileSdk
-    buildToolsVersion = Versions.buildTools
+
     defaultConfig {
-        applicationId = "com.purnaprasanth.twitches"
         minSdk = Versions.minSdk
         targetSdk = Versions.targetSdk
-        versionCode = 1
-        versionName = "1.0"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        manifestPlaceholders["appAuthRedirectScheme"] = "com.redirectScheme.comm"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -32,7 +28,6 @@ android {
             )
         }
     }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -40,12 +35,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = Versions.composeCompiler
-    }
-
-    buildFeatures {
-        compose = true
-    }
 }
+
+apply(from = Libs.dependency)
