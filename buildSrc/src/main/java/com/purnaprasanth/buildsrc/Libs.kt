@@ -64,6 +64,11 @@ object Libs {
             "androidx.navigation:navigation-compose:${Versions.navigation}"
     }
 
+    object Mobius {
+        const val core = "com.spotify.mobius:mobius-core:${Versions.mobius}"
+        const val test = "com.spotify.mobius:mobius-test:${Versions.mobius}"
+    }
+
     object Room {
         const val runtime = "androidx.room:room-runtime:${Versions.room}"
         const val compiler = "androidx.room:room-compiler:${Versions.room}"

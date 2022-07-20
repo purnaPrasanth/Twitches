@@ -6,6 +6,7 @@ dependencies {
     implementation(Libs.Kotlin.coRoutineAndroid)
 
     implementation(project(":baseandroid"))
+    implementation(project(":mobiuscoroutine"))
 
     implementation(Libs.Androidx.composeUI)
     implementation(Libs.Androidx.composeUITooling)

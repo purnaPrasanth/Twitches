@@ -44,6 +44,7 @@ object Versions {
     const val flow_binding_version = "1.2.0"
     const val appAuth = "0.11.1"
     const val arrow = "1.1.2"
+    const val mobius = "1.5.8"
 
     // testing
     const val jUnit = "5.8.2"

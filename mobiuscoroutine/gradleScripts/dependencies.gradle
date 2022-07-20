@@ -1,0 +1,9 @@
+import com.purnaprasanth.buildsrc.Libs
+
+dependencies {
+    implementation(Libs.Kotlin.coRoutineAndroid)
+
+    implementation(Libs.Mobius.core)
+
+    testImplementation(Libs.Mobius.test)
+}
