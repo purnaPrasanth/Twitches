@@ -12,9 +12,11 @@
     <dimen name="parent_padding_half">6dp</dimen>
     <dimen name="parent_padding_quarter">4dp</dimen>
 
+    <dimen name="elevation">@dimen/design_bottom_navigation_elevation</dimen>
 
     <dimen name="toolbarHeight">56dp</dimen>
     <dimen name="toolbarCornerDimension">24dp</dimen>
     <dimen name="image_avatar">64dp</dimen>
+    <dimen name="icon_size">@dimen/design_bottom_navigation_icon_size</dimen>
 
 </resources>

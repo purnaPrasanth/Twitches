@@ -28,23 +28,6 @@ object Libs {
         const val material = "com.google.android.material:material:${Versions.material}"
         const val motionLayout =
             "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-
-        const val composeUI = "androidx.compose.ui:ui:${Versions.compose}"
-        const val composeUITooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
-        const val composeFoundation = "androidx.compose.foundation:foundation:${Versions.compose}"
-
-        const val composeMaterial = "androidx.compose.material:material:${Versions.compose}"
-
-        const val composeMaterialIcons =
-            "androidx.compose.material:material-icons-core:${Versions.compose}"
-        const val composeMaterialIconsExtended =
-            "androidx.compose.material:material-icons-extended:${Versions.compose}"
-        const val composeActivity = "androidx.activity:activity-compose:${Versions.composeActivity}"
-
-        const val composeViewModel =
-            "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.composeViewModel}"
-        const val constraintCompose =
-            "androidx.constraintlayout:constraintlayout-compose:1.0.1"
     }
 
     object PlayServices {
@@ -60,8 +43,6 @@ object Libs {
     object Navigation {
         const val fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
         const val ui = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
-        const val composeNavigation =
-            "androidx.navigation:navigation-compose:${Versions.navigation}"
     }
 
     object Mobius {

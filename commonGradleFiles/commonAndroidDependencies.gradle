@@ -8,24 +8,21 @@ dependencies {
     implementation(project(":baseandroid"))
     implementation(project(":mobiuscoroutine"))
 
-    implementation(Libs.Androidx.composeUI)
-    implementation(Libs.Androidx.composeUITooling)
-    implementation(Libs.Androidx.composeFoundation)
-    implementation(Libs.Androidx.composeMaterial)
-    implementation(Libs.Androidx.composeMaterialIcons)
-    implementation(Libs.Androidx.composeMaterialIconsExtended)
-    implementation(Libs.Androidx.composeActivity)
-    implementation(Libs.Androidx.composeViewModel)
-    implementation(Libs.Androidx.constraintCompose)
-
-    implementation(Libs.Navigation.composeNavigation)
-
     implementation(Libs.Hilt.hiltAndroid)
     kapt(Libs.Hilt.hiltAnnotation)
 
-    implementation(Libs.Androidx.material)
-    implementation(Libs.Androidx.appCompat)
-    implementation(Libs.Androidx.motionLayout)
+    implementation(Libs.Androidx.material) {
+        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel'
+        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel-ktx'
+    }
+    implementation(Libs.Androidx.appCompat) {
+        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel'
+        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel-ktx'
+    }
+    implementation(Libs.Androidx.motionLayout) {
+        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel'
+        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel-ktx'
+    }
 
     implementation(Libs.FlowBindings.platformBindings)
     implementation(Libs.FlowBindings.material)

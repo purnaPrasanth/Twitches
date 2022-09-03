@@ -39,12 +39,4 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = Versions.composeCompiler
-    }
-
-    buildFeatures {
-        compose = true
-    }
 }
