@@ -13,12 +13,13 @@ object Versions {
     const val targetSdk = 33
 
     // Plugin
-    const val pluginGradle = "7.1.2"
-    const val kotlin = "1.6.21"
+    const val pluginGradle = "7.2.2"
+    const val kotlin = "1.7.10"
     const val coRoutines = "1.6.4"
     const val versionChecker = "0.42.0"
 
     // Jetpack
+    // Do not update; throwing duplicate dependency errors
     const val appCompat = "1.4.1"
     const val constraintLayout = "2.1.4"
     const val recycleView = "1.0.0"
@@ -27,10 +28,11 @@ object Versions {
     const val browser = "1.0.0"
     const val room = "2.2.1"
     const val playServices = "17.0.0"
-    const val material = "1.6.0"
+    const val material = "1.6.1"
     const val dataStore = "1.0.0"
 
     // Third Party
+    // Do not update; throwing duplicate dependency errors
     const val hilt = "2.42"
     const val okHttp = "4.9.2"
     const val retrofit = "2.3.0"

@@ -15,7 +15,6 @@ object Libs {
     object Plugins {
         const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.pluginGradle}"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
-        const val hiltPlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
         const val versionChecker =
             "com.github.ben-manes:gradle-versions-plugin:${Versions.versionChecker}"
     }
