@@ -9,7 +9,6 @@ apply(from = Libs.dependency)
 
 tasks.compileTestKotlin {
     kotlinOptions {
-        jvmTarget = "1.8"
         freeCompilerArgs = freeCompilerArgs.toMutableList().apply {
             addAll(
                 listOf(
