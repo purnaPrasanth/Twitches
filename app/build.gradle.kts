@@ -1,5 +1,4 @@
 import com.purnaprasanth.buildsrc.Libs
-import com.purnaprasanth.buildsrc.Versions
 
 plugins {
     id("com.android.application")
@@ -11,12 +10,12 @@ plugins {
 apply(from = Libs.dependency)
 
 android {
-    compileSdk = Versions.compileSdk
-    buildToolsVersion = Versions.buildTools
+    compileSdk = libs.versions.compileSdk.get().toInt()
+    buildToolsVersion = libs.versions.buildTools.get()
     defaultConfig {
         applicationId = "com.purnaprasanth.twitches"
-        minSdk = Versions.minSdk
-        targetSdk = Versions.targetSdk
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

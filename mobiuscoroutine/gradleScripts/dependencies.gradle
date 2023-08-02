@@ -1,9 +1,7 @@
-import com.purnaprasanth.buildsrc.Libs
-
 dependencies {
-    implementation(Libs.Kotlin.coRoutineAndroid)
+    implementation(libs.kotlinx.coroutines.android)
 
-    implementation(Libs.Mobius.core)
+    implementation(libs.mobius.core)
 
-    testImplementation(Libs.Mobius.test)
+    testImplementation(libs.mobius.test)
 }

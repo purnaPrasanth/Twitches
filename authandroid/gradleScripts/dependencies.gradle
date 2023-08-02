@@ -5,5 +5,5 @@ apply from: Libs.commonAndroid
 dependencies {
     implementation(project(":auth"))
 
-    implementation(Libs.Auth.appAuth)
+    implementation(libs.openid.app.auth)
 }

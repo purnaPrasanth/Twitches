@@ -1,18 +1,21 @@
+import com.android.build.gradle.internal.plugins.VersionCheckPlugin
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+import io.gitlab.arturbosch.detekt.DetektPlugin
 
+@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    id("com.android.application") version "7.2.2" apply false
-    id("org.jetbrains.kotlin.jvm") version "1.7.10" apply false
-    id("io.gitlab.arturbosch.detekt") version "1.21.0"
-    id("com.github.ben-manes.versions") version "0.42.0"
-    id("com.google.dagger.hilt.android") version "2.43.2" apply false
-    id("com.android.library") version "7.2.2" apply false
-    id("org.jetbrains.kotlin.android") version ("1.7.10") apply false
+    alias(libs.plugins.android.application).apply(false)
+    alias(libs.plugins.android.library).apply(false)
+    alias(libs.plugins.kotlin.android).apply(false)
+    alias(libs.plugins.kotlin.jvm).apply(false)
+    alias(libs.plugins.hiltAndroid).apply(false)
+    alias(libs.plugins.detekt)
+    alias(libs.plugins.versionChecker)
 }
 
 subprojects {
-    apply(plugin = "io.gitlab.arturbosch.detekt")
-    apply(plugin = "com.github.ben-manes.versions")
+    apply<DetektPlugin>()
+    apply<VersionCheckPlugin>()
     detekt {
         config = files("${project.rootDir}/config/detekt/detekt.yml")
         parallel = true

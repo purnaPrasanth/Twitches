@@ -1,19 +1,16 @@
-import com.purnaprasanth.buildsrc.Libs
-import com.purnaprasanth.buildsrc.TestLibs
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation(project(":base"))
 
-    implementation(Libs.Kotlin.coRoutine)
-    implementation(Libs.Arrow.core)
-    implementation(Libs.Arrow.fx)
-    implementation(Libs.Arrow.optics)
+    implementation(libs.kotlinx.coroutines)
+    implementation(libs.arrow.core)
+    implementation(libs.arrow.fx)
+    implementation(libs.arrow.optics)
 
-    testImplementation(TestLibs.Mockk.mockk)
-    testImplementation(TestLibs.CoRoutines.kotlinx)
-    testImplementation(TestLibs.KoTest.assertions)
-    testImplementation(TestLibs.KoTest.framework)
-    testRuntimeOnly(TestLibs.Junit.jupiter)
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.kotest.assertions)
+    testImplementation(libs.kotest.runner)
+    testRuntimeOnly(libs.junit.jupiter)
 }

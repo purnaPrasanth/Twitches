@@ -3,5 +3,5 @@ import com.purnaprasanth.buildsrc.Libs
 apply from: Libs.common
 
 dependencies {
-    implementation(Libs.DataStore.core)
+    implementation(libs.androidx.datastore.core)
 }

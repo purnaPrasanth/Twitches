@@ -3,9 +3,9 @@ import com.purnaprasanth.buildsrc.Libs
 apply from: Libs.commonAndroid
 
 dependencies {
-    implementation(Libs.Auth.appAuth)
+    implementation(libs.openid.app.auth)
 
     implementation(project(":auth"))
     implementation(project(":authandroid"))
-    implementation(Libs.DataStore.dataStore)
+    implementation(libs.androidx.datastore)
 }

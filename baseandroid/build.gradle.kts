@@ -1,5 +1,4 @@
 import com.purnaprasanth.buildsrc.Libs
-import com.purnaprasanth.buildsrc.Versions
 
 plugins {
     id("com.android.library")
@@ -11,11 +10,10 @@ plugins {
 apply(from = Libs.dependency)
 
 android {
-    compileSdk = Versions.compileSdk
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        minSdk = Versions.minSdk
-        targetSdk = Versions.targetSdk
+        minSdk = libs.versions.minSdk.get().toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")

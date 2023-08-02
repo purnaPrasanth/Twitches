@@ -3,21 +3,17 @@ import com.purnaprasanth.buildsrc.Libs
 apply from: Libs.common
 
 dependencies {
-    implementation(Libs.Kotlin.coRoutineAndroid)
+    implementation(libs.kotlinx.coroutines.android)
 
-    implementation(Libs.Androidx.material) {
+    implementation(libs.androidx.material) {
         exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel'
         exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel-ktx'
     }
-    implementation(Libs.Androidx.appCompat) {
-        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel'
-        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel-ktx'
-    }
-    implementation(Libs.Androidx.motionLayout){
+    implementation(libs.androidx.appcompat) {
         exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel'
         exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel-ktx'
     }
 
-    implementation(Libs.Hilt.hiltAndroid)
-    kapt(Libs.Hilt.hiltAnnotation)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
 }

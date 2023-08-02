@@ -1,9 +1,8 @@
-import com.purnaprasanth.buildsrc.Libs
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation(Libs.Kotlin.coRoutine)
-    implementation(Libs.Arrow.core)
-    implementation(Libs.Arrow.fx)
+    implementation(libs.kotlinx.coroutines)
+    implementation(libs.arrow.core)
+    implementation(libs.arrow.fx)
 }
