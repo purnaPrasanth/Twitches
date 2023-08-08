@@ -26,6 +26,15 @@ android {
             )
         }
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.current()
+        targetCompatibility = JavaVersion.current()
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.current().toString()
+    }
 }
 
 apply(from = Libs.dependency)

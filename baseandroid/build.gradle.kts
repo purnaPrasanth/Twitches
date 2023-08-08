@@ -11,6 +11,7 @@ apply(from = Libs.dependency)
 
 android {
     compileSdk = libs.versions.compileSdk.get().toInt()
+    namespace = "com.purnaprasanth.twitches.baseandroid"
 
     defaultConfig {
         minSdk = libs.versions.minSdk.get().toInt()
@@ -27,5 +28,14 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.current()
+        targetCompatibility = JavaVersion.current()
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.current().toString()
     }
 }

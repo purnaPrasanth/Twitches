@@ -12,6 +12,7 @@ apply(from = Libs.dependency)
 android {
     compileSdk = libs.versions.compileSdk.get().toInt()
     buildToolsVersion = libs.versions.buildTools.get()
+    namespace = "com.purnaprasanth.twitches"
     defaultConfig {
         applicationId = "com.purnaprasanth.twitches"
         minSdk = libs.versions.minSdk.get().toInt()
@@ -22,6 +23,7 @@ android {
 
         manifestPlaceholders["appAuthRedirectScheme"] = "com.redirectScheme.comm"
     }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -30,5 +32,14 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.current()
+        targetCompatibility = JavaVersion.current()
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.current().toString()
     }
 }
