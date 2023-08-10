@@ -34,6 +34,7 @@ android {
 
     kotlinOptions {
         jvmTarget = JavaVersion.current().toString()
+        freeCompilerArgs = listOf("-Xcontext-receivers")
     }
 }
 

@@ -2,9 +2,13 @@ package com.purnaprasanth.authandroid
 
 import android.net.Uri
 import arrow.core.Either
-import arrow.core.continuations.Effect
-import arrow.core.continuations.effect
-import net.openid.appauth.*
+import arrow.core.raise.Effect
+import arrow.core.raise.effect
+import net.openid.appauth.AuthorizationException
+import net.openid.appauth.AuthorizationService
+import net.openid.appauth.AuthorizationServiceConfiguration
+import net.openid.appauth.TokenRequest
+import net.openid.appauth.TokenResponse
 import kotlin.coroutines.intrinsics.suspendCoroutineUninterceptedOrReturn
 import kotlin.coroutines.resume
 

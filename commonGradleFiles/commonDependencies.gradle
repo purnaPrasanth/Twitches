@@ -6,6 +6,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines)
     implementation(libs.arrow.core)
     implementation(libs.arrow.fx)
+    implementation(libs.arrow.fx.stm)
     implementation(libs.arrow.optics)
 
     testImplementation(libs.mockk)

@@ -7,10 +7,10 @@ targetSdk = "33"
 
 ## Plugins
 androidGradlePlugin = "8.1.0"
-kotlin = "1.8.21"
-detekt = "1.21.0"
-versionChecker = "0.42.0"
-hilt = "2.43.2"
+kotlin = "1.9.0"
+detekt = "1.23.1"
+versionChecker = "0.47.0"
+hilt = "2.47"
 
 ## Androidx
 appCompat = "1.6.1"
@@ -21,14 +21,13 @@ datastore = "1.0.0"
 coroutines = "1.7.3"
 flowbindings = "1.2.0"
 appauth = "0.11.1"
-arrow = "1.1.2"
-mobius = "1.5.9"
+arrow = "1.2.0"
+mobius = "1.5.12"
 
 ## Testing
-junit = "5.9.0"
-kotest = "5.4.2"
-mockk = "1.12.7"
-
+junit = "5.10.0"
+kotest = "5.6.2"
+mockk = "1.13.5"
 
 [libraries]
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appCompat" }
@@ -45,7 +44,9 @@ flow-binding-material = { group = "io.github.reactivecircus.flowbinding", name =
 openid-app-auth = { group = "net.openid", name = "appauth", version.ref = "appauth" }
 arrow-core = { group = "io.arrow-kt", name = "arrow-core", version.ref = "arrow" }
 arrow-fx = { group = "io.arrow-kt", name = "arrow-fx-coroutines", version.ref = "arrow" }
+arrow-fx-stm = { group = "io.arrow-kt", name = "arrow-fx-stm", version.ref = "arrow" }
 arrow-optics = { group = "io.arrow-kt", name = "arrow-optics", version.ref = "arrow" }
+arrow-optics-ksp = { group = "io.arrow-kt", name = "arrow-optics-ksp-plugin", version.ref = "arrow" }
 arrow-meta = { group = "io.arrow-kt", name = "arrow-meta", version.ref = "arrow" }
 mobius-core = { group = "com.spotify.mobius", name = "mobius-core", version.ref = "mobius" }
 mobius-test = { group = "com.spotify.mobius", name = "mobius-test", version.ref = "mobius" }
