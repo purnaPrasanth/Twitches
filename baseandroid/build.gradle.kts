@@ -3,8 +3,6 @@ import com.purnaprasanth.buildsrc.Libs
 plugins {
     id("com.android.library")
     id("kotlin-android")
-    id("dagger.hilt.android.plugin")
-    id("kotlin-kapt")
 }
 
 apply(from = Libs.dependency)

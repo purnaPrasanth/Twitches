@@ -1,24 +1,24 @@
 [versions]
 ## android-sdk
-compileSdk = "33"
-buildTools = "33.0.1"
-minSdk = "23"
-targetSdk = "33"
+compileSdk = "35"
+buildTools = "35.0.0"
+minSdk = "25"
+targetSdk = "35"
 
 ## Plugins
-androidGradlePlugin = "8.1.0"
-kotlin = "1.9.0"
+androidGradlePlugin = "8.8.0"
+kotlin = "2.1.0"
 detekt = "1.23.1"
 versionChecker = "0.47.0"
 hilt = "2.47"
 
 ## Androidx
-appCompat = "1.6.1"
-material = "1.9.0"
-datastore = "1.0.0"
+appCompat = "1.7.0"
+material = "1.12.0"
+datastore = "1.1.2"
 
 ## libraries
-coroutines = "1.7.3"
+coroutines = "1.8.0"
 flowbindings = "1.2.0"
 appauth = "0.11.1"
 arrow = "1.2.0"
@@ -37,8 +37,6 @@ androidx-datastore-core = { group = "androidx.datastore", name = "datastore-core
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 flow-binding-android = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-android", version.ref = "flowbindings" }
 flow-binding-material = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-material", version.ref = "flowbindings" }
 openid-app-auth = { group = "net.openid", name = "appauth", version.ref = "appauth" }
@@ -63,7 +61,6 @@ mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 versionChecker = { id = "com.github.ben-manes.versions", version.ref = "versionChecker" }

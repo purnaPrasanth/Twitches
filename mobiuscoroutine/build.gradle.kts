@@ -2,7 +2,6 @@ import com.purnaprasanth.buildsrc.Libs
 
 plugins {
     id("kotlin")
-    id("kotlin-kapt")
 }
 
 apply(from = Libs.dependency)

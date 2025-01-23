@@ -6,17 +6,8 @@ dependencies {
     implementation(project(":baseandroid"))
     implementation(project(":mobiuscoroutine"))
 
-    implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
-
-    implementation(libs.androidx.material) {
-        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel'
-        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel-ktx'
-    }
-    implementation(libs.androidx.appcompat) {
-        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel'
-        exclude group: 'androidx.lifecycle', module:'lifecycle-viewmodel-ktx'
-    }
+    implementation(libs.androidx.material)
+    implementation(libs.androidx.appcompat)
 
     implementation(libs.flow.binding.android)
     implementation(libs.flow.binding.material)
